@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> To-do List </title>
+
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/7.9.3/firebase-app.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/7.9.3/firebase-auth.js"></script>
+  <script defer src="/__/firebase/7.9.3/firebase-database.js"></script>
+  <script defer src="/__/firebase/7.9.3/firebase-messaging.js"></script>
+  <script defer src="/__/firebase/7.9.3/firebase-storage.js"></script>
+  <script defer src="/__/firebase/7.9.3/firebase-firestore.js"></script>
+
+  <!-- initialize the SDK after all desired features are loaded -->
+  <script defer src="/__/firebase/init.js"></script>
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <h1 class="title"> TO-DO LIST </h1>
+
+  <div class="task-list">
+    <div id="pending">
+      <h2> Pending </h2>
+      <ul id="pending-list"></ul>
+    </div>
+
+    <div id="done">
+      <h2> Done </h2>
+      <ul id="done-list"></ul>
+    </div>
+  </div>
+
+  <div id="add-task">
+    <input type="text" id="input-task" placeholder="Add task here..." autofocus>
+    <button id="btn-add"> Add </button>
+  </div>
+</body>
+<script src="./js/script.js"></script>
+
+</html>
